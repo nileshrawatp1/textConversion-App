@@ -4,8 +4,8 @@ import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
-import About from './components/About';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import About from './components/About';
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
 
@@ -35,14 +35,18 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <>
+    {/* <BrowserRouter> */}
       <Navbar title="TextUtils" about="About App" theme={dark} handleThemeChange={handleThemeChange} />
       <Alert alert={alertMsg} />
-      <Routes>
-        <Route path="/about" element={<About theme={dark} showAlert={showAlert} />}/>
-        <Route path="/" element={<TextForm heading="Enter your text below to Analyze" theme={dark} showAlert={showAlert} />}/> 
-      </Routes>
-    </BrowserRouter>
+      {/* <Routes> */}
+        {/* <Route path="/about" element={<About theme={dark} showAlert={showAlert} />}/> */}
+        {/* <About theme={dark} showAlert={showAlert} /> */}
+        {/* <Route path="/" element={<TextForm heading="Enter your text below to Analyze" theme={dark} showAlert={showAlert} />}/>  */}
+        <TextForm heading="Enter your text below to Analyze" theme={dark} showAlert={showAlert} />
+      {/* </Routes>
+    </BrowserRouter> */}
+    </>
   );
 }
 

@@ -33,6 +33,15 @@ export default function TextForm(props) {
         setText(encodeURI(text))
         props.showAlert("Text Encoded", "success");
     };
+    const handleCopy = () => {
+        navigator.clipboard.writeText(text); 
+        props.showAlert("Copied to Clipboard!", "success");
+    }
+    const handleExtraSpaces = () => {
+        let newText = text.split(/[ ]+/);
+        setText(newText.join(" "));
+        props.showAlert("Extra spaces removed!", "success");
+    }
 
     const [text, setText] = useState("");
 
@@ -57,6 +66,8 @@ export default function TextForm(props) {
                 <button className="btn btn-primary m-1" onClick={removeSpace}>Remove Space</button>
                 <button className="btn btn-primary m-1" onClick={decodeText}>Decode Text</button>
                 <button className="btn btn-primary m-1" onClick={encodeText}>Encode Text</button>
+                <button className="btn btn-primary m-1" onClick={handleCopy}>Copy Text</button>
+                <button className="btn btn-primary m-1" onClick={handleExtraSpaces}>Remove Extra Space</button>
             </div>
             <div className="container" >
                 <h3>Your Text Summary</h3>
