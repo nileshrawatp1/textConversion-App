@@ -31,7 +31,7 @@ function App() {
     });
     setTimeout(() => {
       setAlertMsg(null)
-    }, 2000);
+    }, 3000);
   }
 
   return (

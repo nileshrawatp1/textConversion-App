@@ -47,7 +47,7 @@ export default function TextForm(props) {
 
     const countWords = (text) => {
         const trimmedStr = text.trim(); // Trim the string to remove leading and trailing whitespaces
-        const wordsArray = trimmedStr.split(' '); // Split the string into an array of words using a space as the delimiter
+        const wordsArray = trimmedStr.split(/\s+/); // Split the string into an array of words using a space as the delimiter
         const filteredWordsArray = wordsArray.filter(word => word !== ''); // Filter out empty strings (in case of multiple spaces)
         return filteredWordsArray.length;
     }
