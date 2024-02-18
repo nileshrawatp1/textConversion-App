@@ -57,17 +57,17 @@ export default function TextForm(props) {
             <div className="container my-3" >
                 <div className="my-3">
                     <h1>{props.heading}</h1>
-                    <textarea style={{ backgroundColor: props.theme ? 'grey' : 'white', color: props.theme ? 'white' : 'black' }} className="form-control" value={text} onChange={handleTextChange} id="textId" rows="8" placeholder='Enter your text here'></textarea>
+                    <textarea style={{ backgroundColor: props.theme ? '#2f3148' : 'white', color: props.theme ? 'white' : 'black' }} className="form-control" value={text} onChange={handleTextChange} id="textId" rows="8" placeholder='Enter your text here'></textarea>
                 </div>
-                <button className="btn btn-primary m-1" onClick={converUpperCase}>Convert to Uppercase</button>
-                <button className="btn btn-primary m-1" onClick={converLowerCase}>Convert to Lowercase</button>
-                <button className="btn btn-primary m-1" onClick={clearText}>Clear Text</button>
-                <button className="btn btn-primary m-1" onClick={githubReadme}>Github Table Content</button>
-                <button className="btn btn-primary m-1" onClick={removeSpace}>Remove Space</button>
-                <button className="btn btn-primary m-1" onClick={decodeText}>Decode Text</button>
-                <button className="btn btn-primary m-1" onClick={encodeText}>Encode Text</button>
-                <button className="btn btn-primary m-1" onClick={handleCopy}>Copy Text</button>
-                <button className="btn btn-primary m-1" onClick={handleExtraSpaces}>Remove Extra Space</button>
+                <button disabled={text.length === 0} className="btn btn-primary m-1" onClick={converUpperCase}>Convert to Uppercase</button>
+                <button disabled={text.length === 0} className="btn btn-primary m-1" onClick={converLowerCase}>Convert to Lowercase</button>
+                <button disabled={text.length === 0} className="btn btn-primary m-1" onClick={clearText}>Clear Text</button>
+                <button disabled={text.length === 0} className="btn btn-primary m-1" onClick={githubReadme}>Github Table Content</button>
+                <button disabled={text.length === 0} className="btn btn-primary m-1" onClick={removeSpace}>Remove Space</button>
+                <button disabled={text.length === 0} className="btn btn-primary m-1" onClick={decodeText}>Decode Text</button>
+                <button disabled={text.length === 0} className="btn btn-primary m-1" onClick={encodeText}>Encode Text</button>
+                <button disabled={text.length === 0} className="btn btn-primary m-1" onClick={handleCopy}>Copy Text</button>
+                <button disabled={text.length === 0} className="btn btn-primary m-1" onClick={handleExtraSpaces}>Remove Extra Space</button>
             </div>
             <div className="container" >
                 <h3>Your Text Summary</h3>
