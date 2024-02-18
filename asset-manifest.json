@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/textConversion-App/static/css/main.f855e6bc.css",
-    "main.js": "/textConversion-App/static/js/main.d878d154.js",
+    "main.css": "/textConversion-App/static/css/main.95ddea26.css",
+    "main.js": "/textConversion-App/static/js/main.09cd3748.js",
     "static/js/453.d5f4d124.chunk.js": "/textConversion-App/static/js/453.d5f4d124.chunk.js",
     "index.html": "/textConversion-App/index.html",
-    "main.f855e6bc.css.map": "/textConversion-App/static/css/main.f855e6bc.css.map",
-    "main.d878d154.js.map": "/textConversion-App/static/js/main.d878d154.js.map",
+    "main.95ddea26.css.map": "/textConversion-App/static/css/main.95ddea26.css.map",
+    "main.09cd3748.js.map": "/textConversion-App/static/js/main.09cd3748.js.map",
     "453.d5f4d124.chunk.js.map": "/textConversion-App/static/js/453.d5f4d124.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.d878d154.js"
+    "static/css/main.95ddea26.css",
+    "static/js/main.09cd3748.js"
   ]
 }
